@@ -1,22 +1,8 @@
-#! /bin/bash
+#!/bin/bash
 
-#echo 31+21
+e=$((1/3)) #use double parenthesis or it will be used as string concatenation
 
-#n1=4
-#n2=10
+echo $e
 
-#echo $(( n1 + n2 ))
-#echo $(( n2 / n1 ))
-#echo $(( n2 % n1 ))
-#echo $(( n2 * n1 ))
-#echo $(expr $n2 % $n1 )
-#echo $(expr $n2 \* $n1 )
-
-
-echo "Enter hex number"
-read hex
-
-echo -n "Decimal for $hex: "
-
-echo "obase=10; ibase=16; $hex" | bc
-
+((e+=2))
+echo $e
